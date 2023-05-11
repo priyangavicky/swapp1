@@ -1,0 +1,42 @@
+.container{
+    height: 500px;
+    width: 560px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 15px #333;
+}
+.container .slides{
+    height: calc(20% - 5px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+
+}
+.container .slides >img{
+    height: 100%;
+    width: calc(30% - 5px);
+    border: 2px solid black;
+    object-fit: cover;
+    cursor: pointer;
+}
+.container .slides >img:hover{
+    filter: grayscale();
+}
+.bigscreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(80% - 10px);
+    width: calc(100% - 5px);
+    border: 4px solid red;
+}
+.bigscreen > img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
